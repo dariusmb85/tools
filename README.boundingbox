@@ -8,3 +8,9 @@ North       East
 35.932195, -77.573611
 South       West
 35.863333, -77.505278
+
+# This command finds households
+./clipToBoundingBox.py --inputFile ../../../data/RTISyntheticPopulations-2/37/NC2019_Households.csv --north 35.932195 --south 35.863333 --east -77.573611 --west -78.005278
+
+# This one doesn't
+./clipToBoundingBox.py --inputFile ../../../data/RTISyntheticPopulations-2/37/NC2019_Households.csv --north 35.932195 --south 35.863333 --east -77.573611 --west -77.505278 > test.out
