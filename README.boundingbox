@@ -1,0 +1,10 @@
+# Princeville/Tarrboro approximate hand drawn bounding box.
+# From Google Earth
+35"55'54 N 77"34'25 W
+35"51'48 N 77"30'19 W
+
+# Converted to digital to match RTI formatting
+North       East
+35.932195, -77.573611
+South       West
+35.863333, -77.505278
