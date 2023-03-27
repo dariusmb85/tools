@@ -17,3 +17,6 @@ South       West
 
 # This is actually what we are looking for
 ./clipToBoundingBox.py --inputFile ../../../data/RTISyntheticPopulations-2/37/NC2019_Households.csv --north 35.932195 --south 35.863333 --west -77.573611 --east -77.505278 > test.out
+
+# latest version of the file uses the boxFile argument
+./clipToBoundingBox.py --inputFile ../../../data/RTISyntheticPopulations-2/37/NC2019_Households.csv --boxFile boxFile.txt --outputFile clippedHousehoulds.csv
