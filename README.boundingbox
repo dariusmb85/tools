@@ -20,3 +20,7 @@ South       West
 
 # latest version of the file uses the boxFile argument
 ./clipToBoundingBox.py --inputFile ../../../data/RTISyntheticPopulations-2/37/NC2019_Households.csv --boxFile boxFile.txt --outputFile clippedHousehoulds.csv
+
+# This version uses pandas which is a simpler implementation, but for some reason the resultant
+# output file has some rounding errors.  Issue is described in the code.
+./clipToBoundingBoxPandas.py --inputFile ../../../data/RTISyntheticPopulations-2/37/NC2019_Households.csv --boxFile boxFile.txt --outputFile clippedHousehoulds.csv
