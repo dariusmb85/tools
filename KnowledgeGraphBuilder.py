@@ -318,52 +318,6 @@ elapsed_time = end_time - start_time
 print(f"Elapsed time: {elapsed_time} seconds")
 
 
-# In[ ]:
-
-
-result = kg.apply_edits(adds=edits)
-
-
-# In[28]:
-
-
-query_results = kg.query("MATCH (n:Person) RETURN n")
-
-
-kg.query("MATCH (person:Person) RETURN COUNT(person)") # 37155
-
-
-# In[42]:
-
-
-kg.query("MATCH (person:Person) RETURN COUNT(person)") # 37129
-
-
-# In[45]:
-
-
-kg.query("MATCH (person:Person) RETURN COUNT(person)") # 37019
-
-
-# In[34]:
-
-
-kg.query("MATCH (person:Person) RETURN COUNT(person)") # 37065
-
-
-# In[39]:
-
-
-kg.query("MATCH (person:Person) RETURN COUNT(person)") # 37139
-
-
-# In[51]:
-
-
-kg.query("MATCH (h:Household) RETURN COUNT(h)")
-
-
-
 query_results = kg.query("MATCH (n:Household) RETURN n")
 house_list = []
 
