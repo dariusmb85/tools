@@ -47,6 +47,7 @@ def build_entity_types(entity_properties):
     
     return entity_types
 
+
 def build_props(name, fieldType):
     prop_types = []
     prop_dict = {
@@ -62,6 +63,7 @@ def build_props(name, fieldType):
     prop_types.append(prop_dict)
     return prop_types
 
+
 def build_relationship_types(relationships):
     relationship_types = []
     
@@ -76,6 +78,7 @@ def build_relationship_types(relationships):
         relationship_types.append(relate_dict)
     
     return relationship_types
+
 
 def build_spatial_props():
     space_types = []
@@ -94,3 +97,19 @@ def build_spatial_props():
     }
     space_types.append(space_dict)
     return space_types
+
+# Function to add properties to the knowledge graph
+def add_properties(type_name, properties):
+    for prop_name, field_type in properties:
+        prop_types = build_props(prop_name, field_type)
+        kg.graph_property_adds(type_name=type_name, graph_properties=prop_types)
+
+def convert_columns_to_string(dataframe, columns):
+    for column in columns:
+        dataframe[column] = dataframe[column].astype(str)
+
+def handle_nan_values(value, default="Unknown"):
+    return value if not pd.isna(value) else default
+
+def convert_values_to_string(*values):
+    return [handle_nan_values(value) for value in values]
