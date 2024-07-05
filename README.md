@@ -4,7 +4,7 @@
 ## Working repo for gfloat tool development
 G-FLOAT tech status:
 Link to jupyter notebook
-
+https://github.com/dariusmb85/tools/blob/main/kg_gfloat_maker.ipynb
 
 All data files
 NCDOT: Files are located at the following:
