@@ -1,4 +1,8 @@
 # Working repo for gfloat tool development
+
+## Gaining Access to Arcgis Server
+https://docs.google.com/document/d/1Fn3_lENZC4eL5xADVh2winSzAwODL3Yz33d4tMADSbM/edit?usp=drive_link
+
 ## G-FLOAT tech status:
 Link to jupyter notebook
 https://github.com/dariusmb85/tools/blob/main/kg_gfloat_maker.ipynb
