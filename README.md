@@ -4,6 +4,7 @@
 https://docs.google.com/document/d/1Fn3_lENZC4eL5xADVh2winSzAwODL3Yz33d4tMADSbM/edit?usp=drive_link
 
 ## G-FLOAT tech status:
+The basis for my notebook stems from the arcgis github: https://github.com/Esri/arcgis-python-api/tree/master/guide/17-working-with-knowledge-graphs
 Link to jupyter notebook
 https://github.com/dariusmb85/tools/blob/main/kg_gfloat_maker.ipynb
 
